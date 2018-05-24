@@ -20,10 +20,11 @@ const styles = theme => ({
     }
 });
 
+@observer
 export class HomePage extends React.Component {
 
     render() {
-        const { classes, model } = props;
+        const { classes, model } = this.props;
         return (
             <div>
                 <Paper className={classes.root} elevation={4}>
